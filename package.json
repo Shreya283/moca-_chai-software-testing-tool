@@ -1,0 +1,22 @@
+{
+  "name": "mochademo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/app.spec.js --reporter mochawesome --reporter-options reportDir=Report,reportFilename=Test_Report",
+    "coverage": "nyc npm run test"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.6.0",
+    "nyc": "^17.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "mochawesome": "^7.1.3"
+  }
+}

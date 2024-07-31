@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mocha Chai Testing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.1.3/mocha.min.css" integrity="sha512-1hflxK+R6z7Qd8x0q3xzgtFqF8I4SGb6DD5w8bU0wnzqDPyzAGHYPp9v8kQ+0OeymzzLdeDt/pHpDlUnWFMV5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="mocha"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.1.3/mocha.min.js" integrity="sha512-T+zXzpvzqgzmPoQ0ePxfgzgQb4hAF8cddQOStgToAeYjivwoJ3F0m1x/hBGXBPAUnTQ3zZLmf5oH+93r4oQ1ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.4/chai.min.js" integrity="sha512-OSnA9Jt+fPh5n3hKzN4rDqStAn71E5eFwZfMP8DZbYFJNGT5oHqSyPbLysM9jo2t2y4N4IQCHtb+pz1hp3R7Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        mocha.setup('bdd');
+        const expect = chai.expect;
+    </script>
+    <script src="src/app.js"></script>
+    <script src="test/app.spec.js"></script>
+    <script>
+        mocha.run();
+    </script>
+</body>
+</html>
