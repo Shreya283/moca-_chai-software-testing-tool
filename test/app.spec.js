@@ -68,7 +68,7 @@ describe("ShoppingCart", function () {
   it("should add items to the cart", function () {
     cart.addItem({ name: "Apple", price: 1.0 });
     cart.addItem({ name: "Banana", price: 0.5 });
-    expect(cart.getItemCount()).to.equal(3);
+    expect(cart.getItemCount()).to.equal(2);
   });
 
   it("should remove items from the cart", function () {
